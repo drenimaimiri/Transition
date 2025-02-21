@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dreni{
+    width: 400px;
+    height: 400px;
+    display: flex;
+    flex-wrap: wrap
+}
+
+.drenii{
+    width: 200px;
+    height: 200px;
+    transition: transform 2s;
+}
+
+.red {
+  background-color: red;
+  transform-origin: top left;
+}
+
+.blue{
+    background-color: blue;
+    transform-origin: top right;
+}
+
+.yellow{
+    background-color: yellow;
+    transform-origin: bottom left;
+}
+
+.green{
+    background-color: green;
+    transform-origin: bottom right;
+}
+
+h1{
+    position:absolute;
+    z-index: -1;
+}
+
+.dreni:hover .red, .dreni:hover  .green{
+    transform: rotate(90deg);
+}
+
+.dreni:hover .yellow, .dreni:hover  .blue{
+    transform: rotate(-90deg);
+}
